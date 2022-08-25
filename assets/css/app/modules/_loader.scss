@@ -1,0 +1,14 @@
+.loader {
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	&.loader-white {
+        background-color: #fff !important;
+		background-image: url(../img/loader-white.gif);
+	}
+
+	&.loader-black {
+        background-color: #000 !important;
+		background-image: url(../img/loader-black.gif);
+	}
+}

@@ -1,0 +1,15 @@
+img {
+
+  &.pull-left {
+    margin-top: 4px;
+    margin-right: 8px;
+    margin-bottom: 4px;
+  }
+
+  &.pull-right {
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+  }
+
+}

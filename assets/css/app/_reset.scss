@@ -1,0 +1,146 @@
+/* HUTCHHOUSE RESET */
+/* ----------------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* The below restores some sensible defaults */
+strong {
+    font-weight: $weight-bold;
+}
+
+em { 
+    font-style: italic;
+}
+
+
+a img {
+    border: none;
+}/* Gets rid of IE's blue borders */
+
+/* clearfix */
+
+.group:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+* html .group             { zoom: 1; } /* IE6 */
+
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+/* floats */
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+a img {
+    border-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+// Main content padding
+.main-content {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.navbar {
+	dl{
+		margin-top: 15px;
+	}
+}
+
+// Center images within a div
+.img-center {
+	margin: 0 auto;
+}
+
+// Override for site-title logo
+.navbar {
+	h1, h3 {
+		&.site-title {
+			font-size: 23px;
+			margin-top: 0;
+      line-height: 30px;
+      font-weight: 700;
+		}
+	}
+}
+
+
+button:focus { outline: 0 !important; }
+
+/* iPhone, portrait & landscape. */
+@media all and (max-device-width: 480px) {
+  html,body { -webkit-text-size-adjust:none; }
+}
+/* iPad, portrait & landscape. */
+@media all and (min-device-width: 768px) and (max-device-width: 1024px) {
+  html,body { -webkit-text-size-adjust:none; }
+}
+
+iframe[name='google_conversion_frame'] {
+  height: 0 !important;
+  width: 0 !important;
+  line-height: 0 !important;
+  font-size: 0 !important;
+  margin-top: -13px;
+  float: left;
+}

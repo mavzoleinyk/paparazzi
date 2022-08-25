@@ -1,0 +1,14 @@
+table {
+  th {
+    label {
+      margin-bottom: 0;
+    }
+
+    &.thread-checkbox {
+      width: 100px;
+      input {
+        @extend .pull-right;
+      }
+    }
+  }
+}

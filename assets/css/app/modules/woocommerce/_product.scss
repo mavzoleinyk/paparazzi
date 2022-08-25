@@ -1,0 +1,108 @@
+.product {
+  .panel {
+    ul {
+      li {
+        border-top: 1px dotted #ccc;
+        padding-top: 5px;
+        margin-bottom: 6px;
+      }
+    }
+
+    img {
+      @extend .img-responsive;
+    }
+
+    .panel-footer {
+      min-height: 60px;
+    }
+  }
+
+  h1 {
+    @extend h2;
+  }
+
+  h2 {
+    font-size: $h3-size;
+  }
+
+  .amount {
+    font-size: $h2-size;
+    font-weight: $weight-standard;
+    @media (max-width: $screen-xxs-max)
+    {
+      font-size: $h2-xxs-size;
+    }
+  }
+
+  p {
+    @extend .lead;
+  }
+
+  p.price {
+    margin-bottom: 0px;
+  }
+
+  table.variations {
+
+    td.label {
+      display: table-cell;
+      font-size: 100%;
+      color: $nearly-black;
+    }
+
+    select {
+      width: 280px;
+    }
+
+    td a {
+      margin-left: 20px;
+      display: inline-block;
+      @media (max-width: $screen-xxs-max)
+      {
+        margin-left: 0;
+        margin-top: $margin-top-sm;
+      }
+    }
+
+//    td {
+//      text-align: left;
+//    }
+//
+//    .label {
+//      padding: 8px 0px;
+//      display: table-cell;
+//    }
+
+  }
+
+  .nav-tabs {
+    @extend .nav-justified;
+    font-size: 21px;
+  }
+
+  .panel.entry-content {
+    @extend .bg-info;
+    padding: 30px;
+    margin-bottom: $margin-top-reg;
+
+    ul {
+      @extend .list-group-flat;
+
+      li {
+          background-color: transparent;
+      }
+
+      a {
+          font-weight: 300;
+          font-size: 21px;
+          &:hover {
+              color: $charcoal-grey;
+          }
+      }
+    }
+
+    h2 {
+      display: none;
+    }
+  }
+}

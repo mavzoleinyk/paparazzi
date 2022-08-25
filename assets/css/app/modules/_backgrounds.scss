@@ -1,0 +1,41 @@
+.bg-primary {
+  background-color: $lightest-grey;
+
+  color: $nearly-black;
+
+  a:hover {
+    color: $nearly-black;
+  }
+
+  h3 {
+    margin-bottom: 0px;
+  }
+
+  .module-heading h4 i {
+    background-color: $lightest-grey;
+  }
+}
+
+.bg-info {
+  background-color: $light-smokey-blue;
+  .btn.btn-transparent {
+    border: 1px solid $light-smokey-blue;
+  }
+
+  color: $nearly-black;
+
+  a:hover {
+    color: $nearly-black;
+  }
+
+}
+
+.bg-black {
+  background-color: #000;
+
+  color: #fff;
+
+  a:hover {
+    color: darken(#fff, 20%);
+  }
+}

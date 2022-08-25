@@ -1,0 +1,19 @@
+.wpa_loop-images {
+    overflow: hidden;
+}
+
+.wpa_group-images {
+    width: 16% !important;
+    float: left;
+}
+
+.wpa_group-images a {
+    display: block;
+    text-align: left;
+    padding-left: 0px;
+    padding: 5px 0px;
+}
+
+.wpa_group-images .wpa_image_current {
+    display: block !important;
+}

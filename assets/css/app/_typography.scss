@@ -1,0 +1,206 @@
+/**
+ * Set application typography defaults here
+ */
+
+
+//Remove underline from anchor
+a {
+  text-decoration: none;
+  color: $tabloid-red;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: darken($tabloid-red, 20%);
+  	text-decoration: none;
+  }
+}
+
+.lead {
+  font-size: 21px;
+  color: $charcoal-grey;
+  font-weight: 400;
+
+  @media (max-width: $screen-xxs-max)
+  {
+    font-size: 18px;
+  }
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  color: $nearly-black;
+}
+
+h1 {
+  font-size: $h1-size;
+  line-height: 140%;
+  font-weight: $weight-standard;
+  @media (max-width: $screen-xxs-max)
+  {
+    font-size: $h1-xxs-size;
+  }
+}
+
+h2 {
+  font-size: $h2-size;
+  font-weight: $weight-bold;
+  @media (max-width: $screen-xxs-max)
+  {
+    font-size: $h2-xxs-size;
+  }
+}
+
+h3 {
+  font-size: $h3-size;
+  line-height: 30px;
+  font-weight: $weight-bold;
+  color: $nearly-black;
+
+  &.lead {
+    font-size: 35px;
+    line-height: 45px;
+    color: $nearly-black;
+
+    @media (max-width: $screen-sm-max)
+    {
+      font-size: 26px;
+      line-height: 30px;
+    }
+
+    @media (max-width: $screen-xs-max)
+    {
+      font-size: 21px;
+      line-height: 24px;
+    }
+
+  }
+
+  @media (max-width: $screen-xxs-max)
+  {
+    font-size: $h3-xxs-size;
+  }
+}
+
+h4 {
+  font-size: $h4-size;
+  line-height: 140%;
+  font-weight: $weight-bold;
+  @media (max-width: $screen-xxs-max)
+  {
+    font-size: $h4-xxs-size;
+  }
+}
+
+h5 {
+  font-size: $h5-size;
+  line-height: 140%;
+  @media (max-width: $screen-xxs-max)
+  {
+    font-size: $h5-xxs-size;
+  }
+}
+
+h6 {
+  font-size: $h6-size;
+  line-height: 140%;
+  @media (max-width: $screen-xxs-max)
+  {
+    font-size: $h6-xxs-size;
+  }
+}
+
+ul, ol {
+  margin-left: 0;
+}
+
+p {
+  font-size: $std-size;
+  color: $charcoal-grey;
+	@media (max-width: $screen-xxs-max)
+	{
+		font-size: $std-xxs-size;
+	}
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 25px;
+  border-color: $tabloid-red;
+  border-width: 3px;
+	@media (max-width: $screen-xxs-max)
+	{
+		font-size: 16px;
+	}
+}
+
+.text-danger {
+	color: #e72b31;
+}
+
+.text-primary {
+	color: $tabloid-red;
+}
+
+.text-info {
+	color: $dark-smokey-blue;
+}
+
+
+//Application overall defaults
+body {
+  font-size: $std-size;
+  color: $charcoal-grey;
+  font-family: $font-standard;
+  @media (max-width: $screen-xxs-max)
+  {
+    font-size: $std-xxs-size;
+  }
+}
+
+// DL and positing
+dl {
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: 13px;
+  width: 100%;
+  dd {
+    padding-right: 5px;
+    display: inline;
+    text-decoration: underline;
+  }
+  dt {
+    display: inline;
+  }
+}
+
+.small {
+  font-size: 78%;
+}
+
+.amount {
+  color: $tabloid-red;
+  font-size: 25px;
+	line-height: 2em;
+}
+
+// a in headings
+h1 a, h2 a, h3 a , h4 a {
+	color: $nearly-black;
+	&:hover, &:focus, &:active {
+		color: $nearly-black;
+	}
+}
+
+.weight-light {
+  font-weight: $weight-light !important;
+}
+
+.weight-standard {
+  font-weight: $weight-standard !important;
+}
+
+.weight-bold {
+  font-weight: $weight-bold !important;
+}

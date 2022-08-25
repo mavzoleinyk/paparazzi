@@ -1,0 +1,116 @@
+/* slick buttons  */
+.slick-dots li button:before {
+  content: "";
+  width: 17px;
+  height: 17px;
+  @include border-radius(50%);
+  background-color: rgba(102, 102, 102, 0.3);
+  opacity: 1;
+}
+
+.slick-prev, .slick-next {
+  bottom: 33px;
+  width: 37px;
+  height: 37px;
+  line-height: 37px;
+  background-color: rgba(102, 102, 102, 0.3);
+  @include border-radius(50%);
+  &:hover, &:focus {
+    background-color: rgba(102, 102, 102, 0.7);
+  }
+}
+
+.slick-prev:before {
+  font-family: "FontAwesome";
+  content: '\f0d9';
+  color: $white;
+  vertical-align: middle;
+  font-size: 17px;
+}
+
+.slick-next:before {
+  font-family: "FontAwesome";
+  content: '\f0da';
+  color: $white;
+  vertical-align: middle;
+  font-size: 17px;
+}
+
+.slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  background-color: rgba(102, 102, 102, 0.7);
+}
+
+.slick-dots {
+  position: static;
+  padding-bottom: 40px;
+  padding-top: 30px;
+  li {
+    margin: 0 2px;
+  }
+}
+
+.slick-track > .panel {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+/* panel-thumbnail-overlay in slick */
+
+.panel-thumbnail-overlay {
+  &.slick-slide {
+    width: 366px;
+    opacity: 0.25;
+    .panel-body h3, p {
+      visibility: hidden;
+    }
+
+    .panel-heading {
+      border: 2px solid $nearly-black;
+
+      &:hover {
+        & + .panel-body h3 {
+          color: $tabloid-red !important;
+        }
+
+        img{
+          -webkit-filter: brightness(0.5) contrast(0.7) grayscale(0.5);
+          filter: brightness(0.5) contrast(0.7) grayscale(0.5);
+        }
+
+        span{
+          z-index: $z-index-low;
+        }
+
+      }
+
+    }
+    @media(max-width: $screen-xxs-max)
+    {
+      .panel-body {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: -20px;
+        margin-right: -20px;
+      }
+    }
+  }
+
+  &.slick-slide.slick-active {
+    opacity: 1;
+    .panel-heading {
+      border: 2px solid $tabloid-red;
+    }
+    .panel-body h3, p {
+      visibility: visible;
+    }
+  }
+
+
+  
+}
+

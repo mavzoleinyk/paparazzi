@@ -1,0 +1,45 @@
+.sticky-sidenav {
+
+  position: fixed;
+  right: 0;
+  top: 40%;
+  z-index: $z-index-low;
+
+  li {
+    position: relative;
+    margin-bottom: 8px;
+    a {
+      display: block;
+      position: relative;
+      padding: 9px 15px 8px 6px;
+      min-height: 42px;
+      background: rgba(255, 255, 255, 0.7);
+      color: $nearly-black;
+      &:hover, &.active {
+        background: $white;
+        text-decoration: none;
+        color: $tabloid-red;
+        &:before {
+          border-bottom: 42px solid $white;
+        }
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -21px;
+        border-left: 21px solid transparent;
+        border-bottom: 42px solid rgba(255, 255, 255, 0.7);
+        width: 21px;
+        height: 42px;
+      }
+      span.fa-width {
+        min-width: 23px;
+        display: inline-block;
+      }
+      i {
+        font-size: 21px;
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/** Responsive **/
+$screen-xxs-max: 480px;
+
+/** Webfont **/
+$font-standard: 'Lato', sans-serif;
+$weight-light: 300;
+$weight-standard: 400;
+$weight-bold: 700;
+
+/** Standard settings **/
+$std-size: 17px;
+$h1-size : 35px;
+$h2-size : 32px;
+$h3-size : 26px;
+$h4-size : 21px;
+$h5-size : 18px;
+$h6-size : 12px;
+$small-std-size: 14px;
+
+/** Mobile settings **/
+$std-xxs-size: 14px;
+$h1-xxs-size : 25px;
+$h2-xxs-size : 25px;
+$h3-xxs-size : 20px;
+$h4-xxs-size : 21px;
+$h5-xxs-size : 11px;
+$h6-xxs-size : 8px;
+
+/** Action Text **/
+$action-text-color: #000;
+$action-text: $action-text-color;
+$action-hover: darken($action-text-color, 20%);
+$action-active: darken($action-text-color, 30%);
+
+/** Sections **/
+$margin-top-sm: 20px;
+$margin-top-reg: 40px;
+$margin-top-lg: 140px;
+$margin-bottom-negative-reg: -40px;
+
+/** Z-index heirarchies **/
+
+$z-index-highest: 101;
+$z-index-high: 100;
+$z-index-medium: 99;
+$z-index-low: 98;
+$z-index-lowest: 1;
+$z-index-neutral: 0;
+$z-index-negative: -1;
+
+/** Colors **/
+$white: #fff;
+
+/** Text colors**/
+$darkest-red : #9d0e14;
+$tabloid-red: #cc1f27;
+$charcoal-grey: #666666;
+$nearly-black: #242626;
+
+/** Background colors **/
+$lightest-grey: #f5f5f5;
+$light-grey: #b4b8b8;
+$mid-grey: #8c8c8c;
+
+$light-smokey-blue: #e2e8ec;
+$mid-smokey-blue: #cbd3d9;
+$dark-smokey-blue: #95a7b4;
+$darkest-smokey-blue: #6e7a7a;
+
+$nearly-black: #242626;
+
+/** Background colors from navbar area **/
+$tabloid-red-dark: #9d0e14;
+$tabloid-red-light: #e23f46;
+$tabloid-red-lightest: #f3d6d7;
+
+/** Helper colors **/
+$pale-green-bg: #dff1d9;
+$pale-green-btn: #d6e9c6;
+$medium-green: #577f36;
+$medium-gray: #d9d9d9;

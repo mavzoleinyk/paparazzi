@@ -1,0 +1,10 @@
+.wysiwyg {
+  img {
+    @extend .img-responsive;
+
+    &.aligncenter {
+      margin: 0 auto;
+    }
+
+  }
+}

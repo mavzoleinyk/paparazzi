@@ -1,0 +1,21 @@
+.border {
+
+  border: 1px solid #ccc;
+  padding: 25px;
+  margin: 10px;
+
+  &.border-horizontal {
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+  &.img-border-white {
+    padding: 0px;
+    margin: 0px;
+    border: 1px solid #fff;
+  }
+}
+
+.no-borders {
+
+}

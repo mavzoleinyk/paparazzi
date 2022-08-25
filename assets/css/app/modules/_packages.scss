@@ -1,0 +1,33 @@
+.packages {
+
+	.frame .veil .veil-close {
+		color: black;
+		opacity: 0.6;
+	}
+
+	/* When selecting a package or an extra this is the class for the overlay */
+	.added-item-overlay {
+		position: relative;
+		&.item-selectable {
+			cursor: pointer;
+		}
+		div {
+			position: absolute;
+			top: 0;
+			margin: 0;
+			left: 0;
+			bottom:0;
+			right: 0;
+			background-color: rgba(0, 0, 0, 0.5);
+			display: none;
+			text-align: center;
+			i {
+				font-size:130px;
+				color:white;
+				opacity: 0.7;
+				margin-top: 10%;
+			}
+		}
+	}
+
+}

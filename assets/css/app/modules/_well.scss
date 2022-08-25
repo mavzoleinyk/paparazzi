@@ -1,0 +1,17 @@
+.well {
+	&.well-flat {
+		@include border-radius(0);
+		box-shadow: none;
+		padding: 0px 20px;
+		color: $nearly-black;
+		border: none;
+	}
+
+	&.well-bg-info {
+		@extend .bg-info;
+	}
+
+	&.well-bg-primary {
+		@extend .bg-primary;
+	}
+}

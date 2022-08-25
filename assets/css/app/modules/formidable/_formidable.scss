@@ -1,0 +1,28 @@
+.frm_forms {
+  .form-field {
+    @extend .form-group;
+
+    input, select, textarea {
+      @extend .form-control;
+    }
+
+  }
+
+  .frm_submit {
+    input[type='submit'] {
+      @extend .btn;
+      @extend .btn-primary;
+    }
+  }
+
+  &.with_frm_style {
+    .frm_message {
+      @extend .alert;
+      p {
+        line-height: 1.5em;
+      }
+    }
+  }
+
+}
+

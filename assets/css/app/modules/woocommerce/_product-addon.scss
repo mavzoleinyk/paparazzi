@@ -1,0 +1,97 @@
+.product-addon {
+
+  .addon-description {
+		@extend .well;
+		@extend .well-flat;
+		@extend .well-bg-info;
+		margin-bottom: 0px;
+		p {
+			font-size: $small-std-size;
+			font-style: normal;
+			margin: 0;
+			padding-top: 10px;
+		}
+  }
+
+  .addon-input_multiplier {
+    float: right;
+    min-width: 40px;
+  }
+
+	.form-row {
+		margin-bottom: 10px;
+		line-height: 3.5em;
+		box-shadow: none;
+		@extend .well;
+		@extend .well-flat;
+		@extend .well-bg-info;
+		@extend .text-capitalize;
+		font-size: $small-std-size;
+		.amount {
+			font-size: 1.1em;
+		}
+	}
+
+}
+
+#product-addons-total {
+
+  @extend .clearfix;
+
+  .product-addon-totals {
+
+    width: 100%;
+
+    dl {
+      display: block;
+      @extend .clearfix;
+      width: 100%;
+    }
+
+    border-top: 1px solid $mid-smokey-blue;
+
+    .amount {
+      font-size: 22px;
+    }
+
+    dd, dt {
+      display: block;
+      float: left;
+      text-decoration: none;
+      width: 50%;
+    }
+
+    dt {
+      color: $dark-smokey-blue;
+      font-size: 21px;
+      font-weight: 300;
+      line-height: 2em;
+    }
+
+    dt:last-of-type {
+      color: $nearly-black;
+      font-weight: 700;
+      border-top: 2px solid $nearly-black;
+      padding-top: $margin-top-sm;
+    }
+
+    dd {
+      width: 50%;
+      text-align: right;
+    }
+
+    dd:last-of-type {
+      border-top: 2px solid $nearly-black;
+      padding-top: $margin-top-sm;
+      .amount {
+        font-size: 32px;
+        line-height: 1em;
+      }
+    }
+
+  }
+
+  dl {
+      margin: 0px;
+  }
+}

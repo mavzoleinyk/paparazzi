@@ -1,0 +1,26 @@
+.addthis_sharing_toolbox {
+  margin: 0 auto;
+
+  .at-share-tbx-element {
+    margin-right: 5px;
+    .at-share-btn {
+      @include border-radius(50%);
+      width: 26px;
+      max-width: 26px;
+      height: 26px;
+      max-height: 26px;
+      margin-right: 5px;
+      background-color: $mid-grey;
+      &:hover {
+        background-color: $charcoal-grey;
+      }
+    }
+  }
+
+  .addthis_32x32_style .at4-icon {
+    background-size: 16px !important;
+    background-position: center;
+    width: 26px;
+    height: 26px;
+  }
+}

@@ -1,0 +1,31 @@
+.display-inline {
+
+  display: inline;
+
+  &.inline-list {
+    margin: 0px 5px 10px 5px;
+  }
+
+}
+
+.display-block {
+  display: block;
+}
+
+.display-table {
+	display: table;
+}
+
+.display-table-cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+
+@media (max-width: $screen-xs-max)
+{
+  .display-block-xs {
+    display: block;
+  }
+
+}

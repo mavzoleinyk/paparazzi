@@ -1,0 +1,11 @@
+.nav {
+  &.nav-tabs {
+    .h3 {
+      @media (max-width: $screen-xxs-max)
+      {
+        font-size: 17px;
+        line-height: 20px;
+      }
+    }
+  }
+}

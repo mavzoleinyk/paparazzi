@@ -1,0 +1,1 @@
+<div class="post-meta user-date user-data-link clearfix"><strong><?php the_author_posts_link(); ?></strong> <?php echo get_the_date(); ?></div>

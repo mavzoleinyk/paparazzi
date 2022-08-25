@@ -1,0 +1,52 @@
+// Fixes issue with zoom controls not showing correctly
+.gmnoprint img {
+	max-width: none;
+}
+
+/** FIX for Bootstrap and Google Maps Info window styes problem **/
+.map-canvas {
+	img[src*="gstatic.com/"], img[src*="googleapis.com/"] {
+		max-width: none;
+	}
+}
+
+/** Fix for info window sizing issue **/
+.gm-style-iw {
+  .label:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+
+.map-canvas {
+  margin:0;
+  padding: 0;
+  width: 100%;
+  &.map-canvas-standard {
+    height: 300px;
+  }
+}
+
+.map-icon-wrapper {
+  position: relative;
+  right: 20px;
+  top: 20px;
+  z-index: $z-index-low;
+}
+
+.col-conainter {
+  padding-top: 15px;
+  padding-left: 45px;
+  margin-bottom: 20px;
+}
+
+
+// text list on the left of the map
+.map-list {
+	margin-bottom: 20px;
+	ul {
+		li {
+			margin-bottom: 15px;
+		}
+	}
+}

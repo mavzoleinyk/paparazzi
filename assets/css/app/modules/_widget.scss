@@ -1,0 +1,26 @@
+.widget {
+
+  @extend .col-md-12;
+  @extend .col-sm-6;
+  @extend .col-xs-6;
+  @extend .col-xxs-12;
+
+  .module-heading {
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    h3 {
+      font-weight: $weight-light;
+    }
+
+    @media (max-width: $screen-md-max)
+    {
+      h3 {
+        font-size: $h3-size;
+      }
+    }
+
+  }
+
+}

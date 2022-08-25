@@ -1,0 +1,1 @@
+<a class="image-gallery" href="<?php echo $image; ?>" title="<?php echo $title; ?>"></a>

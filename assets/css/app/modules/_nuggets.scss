@@ -1,0 +1,37 @@
+/**
+* Will produce a nugget with a overlay on top of it. (used on proposals)
+*/
+
+.overlay-nugget {
+
+  .image-overlay-wrapper {
+    background-color: black;
+  }
+
+  .display-table {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+  }
+
+  img {
+    opacity: 0.6;
+  }
+
+  h4 {
+    color: $white;
+    text-align: center;
+    font-weight: $weight-bold;
+    padding: 10px;
+    @media (max-width: $screen-md-max) {
+        font-size: 14px;
+    }
+
+    @media (max-width: $screen-xs-max)
+    {
+      padding: 7px;
+    }
+  }
+
+}

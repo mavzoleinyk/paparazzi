@@ -1,0 +1,166 @@
+.frame {
+  position: relative;
+  .veil {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: .8;
+
+    z-index: $z-index-medium;
+    .content {
+      visibility: hidden;
+    }
+
+    &.veil-black {
+      background-color: #000;
+    }
+
+    &.veil-white {
+      background-color: #fff;
+    }
+
+    &.veil-transparent {
+      background-color: transparent;
+    }
+    
+    .navbar-brand {
+      display: none;
+    }
+
+    .woocommerce-tabs {
+      .tabs, #tab-reviews {
+        display: none;
+      }
+    }
+
+    /**
+    * Product View
+    */
+    .products.related {
+      display: none;
+    }
+
+    .veil-hidden {
+      display: none;
+      visibility: hidden;
+    }
+
+    @media (max-width: $screen-xs-max)
+    {
+
+      .veil-hidden-xs {
+        display: none;
+        visibility: hidden;
+      }
+
+      .veil-xs-9 {
+        @include make-xs-column(9);
+       }
+
+      .veil-xs-12 {
+        @include make-xs-column(12);
+      }
+
+    }
+
+    @media (max-width: $screen-sm-max)
+    {
+
+      .veil-hidden-sm {
+        display: none;
+        visibility: hidden;
+      }
+
+      .veil-sm-11 {
+
+        @include make-sm-column(11);
+
+      }
+
+      .veil-sm-12 {
+
+        @include make-sm-column(12);
+
+      }
+
+    }
+
+    @media (max-width: $screen-md-max)
+    {
+
+      .veil-md-7 {
+
+        @include make-md-column(7);
+
+      }
+
+    }
+
+
+    @media (min-width: $screen-lg-min)
+    {
+
+      .veil-lg-7 {
+
+        @include make-lg-column(7);
+
+      }
+
+    }
+
+
+    #proposal-nav {
+      @media (max-width: $screen-sm-max) {
+        padding-bottom: 0px;
+      }
+    }
+
+    .carousel-menu {
+
+      top: 60px;
+
+      @media (max-width: $screen-xs-max){
+        top: 45px;
+      }
+    }
+
+    .blueimp-gallery {
+      .close {
+
+      }
+    }
+
+  }
+
+}
+
+[data-framed] {
+  .carousel {
+    padding-bottom: 0;
+  }
+}
+
+#packages {
+
+  .veil {
+    .content{
+      padding: 30px 90px 30px 30px;
+      background-color: #fff;
+      .product {
+        margin-top: 0px;
+
+        .panel.entry-content {
+          background-color: $light-smokey-blue;
+        }
+      }
+
+      @media (max-width: $screen-xs-max)
+      {
+        padding: 20px;
+      }
+
+    }
+  }
+
+}

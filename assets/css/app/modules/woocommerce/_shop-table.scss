@@ -1,0 +1,129 @@
+.shop_table {
+
+	th {
+		@extend h4;
+	}
+
+  tbody {
+    tr {
+      td {
+
+        vertical-align: middle;
+
+        &.product-thumbnail {
+          width: 18%;
+          img {
+            @extend .img-responsive;
+          }
+        }
+
+        &.product-name {
+            font-size: 26px;
+            color: $nearly-black;
+
+            a {
+                color: $nearly-black;
+                &:hover {
+                    color: $nearly-black;
+                }
+            }
+        }
+
+        &.product-remove {
+          width: 6%;
+        }
+
+        .btn i {
+            font-size: 30px;
+            color: $light-smokey-blue;
+            &:hover {
+                color: $tabloid-red;
+            }
+        }
+
+        dl {
+            margin: 0px;
+            padding: 0px;
+            font-size: $std-size;
+            @extend .clearfix;
+
+            dt {
+              clear: left;
+            }
+
+            dd {
+              text-decoration: none;
+            }
+
+            dt, dd {
+                float: left;
+                padding: 0 10px 0 0;
+
+              p {
+                padding-bottom: 0;
+                padding-top: 0;
+                margin-bottom: 0;
+              }
+              span {
+                line-height: 100%;
+                font-size: 1em;
+              }
+            }
+        }
+
+      }
+    }
+  }
+}
+
+// coupon
+.coupon {
+	padding: 10px 0 15px 0;
+	border-bottom: 1px solid $light-smokey-blue;
+	input {
+		padding-top: 5px;
+	}
+
+	.btn {
+		font-size: 14px;
+	}
+}
+
+
+
+// total table
+table {
+	.cart-subtotal {
+		vertical-align: middle;
+		color: $dark-smokey-blue;
+		td {
+			text-align: right;
+			font-size: 21px;
+			font-weight: 300;
+		}
+	}
+
+	.order-total {
+		vertical-align: middle;
+		border-top: 2px solid $nearly-black;
+		td {
+			text-align: right;
+			.amount {
+				font-size: 32px;
+			}
+		}
+	}
+}
+
+// order review table
+.woocommerce-checkout-review-order-table {
+
+	th {
+		@extend h4;
+	}
+
+	td.product-total {
+		text-align: right;
+		font-weight: 300;
+	}
+}

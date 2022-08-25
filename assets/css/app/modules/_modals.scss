@@ -1,0 +1,57 @@
+.modal {
+
+  .modal-content {
+      background-color: $light-smokey-blue;
+  }
+
+  .modal-header {
+    h1 {
+      font-weight: $weight-light;
+    }
+  }
+
+  .close {
+      color: $dark-smokey-blue;
+      opacity: 0.9;
+      &:hover {
+          opacity: 1;
+      }
+      i {
+          font-size: 35px;
+          margin: 0;
+      }
+  }
+
+  form {
+      .form-field {
+          input, textarea, select {
+              font-size: $std-size;
+              padding: 9px 12px 6px 12px;
+              @include box-shadow-inset(0, 3px, 0, 0, $medium-gray, inset);
+              border: 1px solid $mid-smokey-blue;
+
+              &:focus {
+                  outline: none;
+                  border: 1px solid $mid-smokey-blue;
+                  @include box-shadow-inset(0, 3px, 0, 0, $medium-gray, inset);
+              }
+          }
+
+          .frm_error {
+              font-size: 11px;
+              @extend .text-danger;
+          }
+      }
+
+    .frm_submit {
+      @media (max-width: $screen-xs-max) {
+        text-align: center;
+      }
+    }
+
+      input[type=submit] {
+          font-size: 17px;
+      }
+  }
+
+}

@@ -1,0 +1,93 @@
+/**
+ * Helper classes that can be used via SASS' @extend feature
+ */
+
+.button {
+  @extend .btn;
+  @extend .btn-default;
+}
+
+.woocommerce-checkout-payment {
+  .button {
+    @extend .btn-success;
+    @extend .btn-lg;
+  }
+}
+
+.alert {
+  .button {
+    @extend .btn-primary;
+    @extend .pull-right;
+  }
+}
+
+.affix {
+  top: 10px;
+}
+
+.margin-top-sm {
+  margin-top: $margin-top-sm;
+}
+
+.margin-top-reg {
+  margin-top: $margin-top-reg;
+}
+
+.margin-top-lg {
+  margin-top: $margin-top-lg;
+}
+
+.margin-bottom-sm {
+	margin-bottom: $margin-top-sm;
+}
+
+.margin-bottom-reg {
+  margin-bottom: $margin-top-reg;
+}
+
+.margin-bottom-lg {
+  margin-bottom: $margin-top-lg;
+}
+
+.margin-bottom-negative-reg {
+  margin-bottom: $margin-bottom-negative-reg;
+}
+
+.margin-left-sm {
+  margin-left: $margin-top-sm;
+}
+
+.margin-left-reg {
+  margin-left: $margin-top-reg;
+}
+
+.margin-right-sm {
+  margin-right: $margin-top-sm;
+}
+
+.margin-right-reg {
+  margin-right: $margin-top-reg;
+}
+
+.padding-left-reg {
+  padding-left: $margin-top-reg;
+  
+  @media (max-width: $screen-xs-max){
+    padding-left: $margin-top-sm;
+  }
+}
+
+@media (max-width: $screen-xs-max){
+
+  .margin-xs-horz-15 {
+    margin: 0 15px;
+  }
+
+}
+
+.border-control {
+  &.border-zero {
+    border-color: transparent;
+    border-width: 0;
+  }
+}

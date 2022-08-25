@@ -1,0 +1,113 @@
+/*Border radius*/
+@mixin border-radius($rad) {
+    -webkit-border-radius: $rad;
+    -moz-border-radius: $rad;
+    border-radius: $rad;
+}
+
+/*Standard thin text shadow @param colour*/
+@mixin text-shadow($colour) {
+    text-shadow: 1px 1px 1px ($colour);
+}
+
+/*Display inline block with IE7 fix*/
+@mixin inline-block() {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+/*Creates gradients*/
+@mixin gradient($from, $to) {
+    /* fallback/image non-cover color */
+    background-color: $from;
+
+    /* Firefox 3.6+ */
+    background-image: -moz-linear-gradient($from, $to);
+
+    /* Safari 4+, Chrome 1+ */
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($from), to($to));
+
+    /* Safari 5.1+, Chrome 10+ */
+    background-image: -webkit-linear-gradient($from, $to);
+
+    /* Opera 11.10+ */
+    background-image: -o-linear-gradient($from, $to);
+}
+
+/**
+	Will produce a gradient to transparent from the directions provided
+**/
+@mixin gradient-to-transparent($directionFrom, $directionTo) {
+
+	/* FF3.6+ */
+	background: -moz-linear-gradient($directionFrom, rgba(255,255,255,0.73) 1%, rgba(255,255,255,0.73) 25%, rgba(255,255,255,0) 64%, rgba(255,255,255,0) 100%);
+
+	/* Chrome,Safari4+ */
+	background: -webkit-gradient(linear, $directionFrom top, $directionTo top, color-stop(1%,rgba(255,255,255,0.73)), color-stop(25%,rgba(255,255,255,0.73)), color-stop(64%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,0)));
+
+	/* Chrome10+,Safari5.1+ */
+	background: -webkit-linear-gradient($directionFrom, rgba(255,255,255,0.73) 1%,rgba(255,255,255,0.73) 25%,rgba(255,255,255,0) 64%,rgba(255,255,255,0) 100%);
+
+	/* Opera 11.10+ */
+	background: -o-linear-gradient($directionFrom, rgba(255,255,255,0.73) 1%,rgba(255,255,255,0.73) 25%,rgba(255,255,255,0) 64%,rgba(255,255,255,0) 100%);
+
+	/* IE10+ */
+	background: -ms-linear-gradient($directionFrom, rgba(255,255,255,0.73) 1%,rgba(255,255,255,0.73) 25%,rgba(255,255,255,0) 64%,rgba(255,255,255,0) 100%);
+
+	/* W3C */
+	background: linear-gradient(to $directionTo, rgba(255,255,255,0.73) 1%,rgba(255,255,255,0.73) 25%,rgba(255,255,255,0) 64%,rgba(255,255,255,0) 100%);
+
+	/* IE6-8 */
+	@if $directionFrom == 'left' {
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baffffff', endColorstr='#00ffffff',GradientType=1 );
+	} @else {
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#baffffff',GradientType=1 );
+	}
+
+}
+
+/************************************************
+ *     Mixin to style horizontal lists          *
+ *                                              *
+ *     @param li margin right, li margin left   *
+ ************************************************/
+@mixin nav-horiz($li-marginl, $li-marginr) {
+    list-style-type:none;
+    margin:0;
+    
+    > li{
+        @include inline-block();
+        margin-right: $li-marginr;
+        margin-left: $li-marginl;
+        
+        &:first-child{
+            margin-left: 0px;
+        }
+    }
+}
+
+/********************************************************************
+ *     Box shadow mixin                                             *
+ *                                                                  *
+ *     @param                                                       *
+ *     Horizontal offset, vertical offset, blur, spread, colour     *
+ *******************************************************************/
+
+@mixin box-shadow($horiz, $vert, $blur, $spread, $color) {
+    -webkit-box-shadow: $horiz $vert $blur $spread $color;
+    -moz-box-shadow: $horiz $vert $blur $spread $color ;
+    box-shadow: $horiz $vert $blur $spread $color;
+}
+
+@mixin box-shadow-inset($horiz, $vert, $blur, $spread, $color, $position) {
+  -webkit-box-shadow: $horiz $vert $blur $spread $color $position;
+  -moz-box-shadow: $horiz $vert $blur $spread $color $position;
+  box-shadow: $horiz $vert $blur $spread $color $position;
+}
+
+@mixin bg-dark-opacity($opacity)
+{
+  background-color: #000;
+  background-color: rgba(0,0,0, $opacity);
+}

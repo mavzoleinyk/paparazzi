@@ -1,0 +1,23 @@
+.page-numbers {
+  @extend .pagination;
+
+  li {
+    a, span {
+
+      border: 0;
+      margin-right: 8px;
+
+      font-size: 15px;
+
+      @extend .bg-primary;
+
+      &.current {
+        @extend .bg-info;
+      }
+
+      &:hover {
+        color: $tabloid-red-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,326 @@
+.carousel {
+
+  padding-bottom: 15px;
+
+  .carousel-indicators {
+    @media (max-width: $screen-xs-max)
+    {
+      bottom: 0px;
+    }
+
+  }
+
+}
+
+.btn-back {
+  position: absolute;
+  top: 0px;
+  left: auto;
+  right: 10px;
+
+}
+
+.carousel-fade {
+
+  .carousel-inner {
+
+      width: inherit;
+
+      .item {
+          opacity: 0;
+          transition-property: opacity;
+      }
+
+      .active {
+          opacity: 1;
+      }
+
+      .active.left,
+      .active.right {
+          left: 0;
+          opacity: 0;
+          z-index: $z-index-lowest;
+      }
+
+      .next.left,
+      .prev.right {
+          opacity: 1;
+      }
+  }
+
+  .carousel-control {
+      z-index: $z-index-low;
+  }
+
+}
+
+.carousel-caption {
+
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 25px;
+
+  h1, h2, h3, h4, h5, h6, p, li, blockquote {
+    color: #fff;
+  }
+
+  blockquote {
+    text-align: left;
+    font-style: italic;
+    font-size: $h4-size;
+    font-weight: $weight-standard;
+    padding: 0px 7px;
+  }
+  
+  @media (max-width: $screen-xs-max)
+  {
+    h2 {
+      font-size: $h2-xxs-size;
+    }
+
+    h3 {
+      font-size: $h3-xxs-size;
+    }
+
+    h4 {
+      font-size: $h4-xxs-size;
+    }
+
+    p {
+      font-size: $std-xxs-size;
+    }
+
+    .blockquote {
+      font-size: 12px;
+    }
+  }
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+    &:hover {
+      color: darken(#fff, 10%) !important;
+      text-decoration: underline !important;
+    }
+  }
+
+  @media (max-width: $screen-xs-max) {
+    h1 {
+      font-size: $h1-xxs-size;
+    }
+    p {
+      font-size: $std-xxs-size;
+    }
+  }
+}
+
+.carousel-menu {
+
+  position: absolute;
+  right: 0;
+  z-index: $z-index-medium;
+  top: 60px;
+
+  .carousel-menu-inner {
+
+    @include bg-dark-opacity(0.66);
+
+    margin-top: 8px;
+    max-width: 70px;
+    padding: 12px;
+
+    li {
+      position: relative;
+      margin-bottom: 12px;
+
+      a {
+        color: $mid-grey;
+        display: block;
+        small {
+          margin-bottom: 7px;
+          display: block;
+        }
+      }
+
+      img {
+        opacity: 0.7;
+      }
+      &.active {
+        img {
+          opacity: 1;
+        }
+
+      }
+    }
+
+    .image-selector {
+
+      background-image: url(../img/white-1px-1px.gif);
+      background-position: center top;
+      background-repeat: repeat-y;
+
+    }
+  }
+
+  @media (max-width: $screen-xs-max)
+  {
+    .carousel-menu-inner {
+      max-width: 45px;
+      padding: 5px;
+
+      li {
+        margin-bottom: 4px;
+        a {
+          small {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel-position {
+
+  position: absolute;
+  margin-right: 80px;
+
+  // When we hide the right panel lets remove the margin-right
+  @media (max-width: $screen-xs-max) {
+    margin-right: 0px;
+  }
+
+  &.carousel-position-top-left {
+    text-align: left;
+    top: 0px;
+    left: 0px;
+    right: auto;
+    bottom: auto;
+    width: 50%;
+
+    @media (max-width: $screen-xs-max) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+  }
+
+  &.carousel-position-top-center {
+    text-align: center;
+    top: 0px;
+    bottom: auto;
+    margin: 0 auto;
+    width: 66%;
+    @media (max-width: $screen-xs-max) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &.carousel-position-top-right {
+    text-align: right;
+    top: 0px;
+    left: inherit;
+    right: 0px;
+    bottom: auto;
+    width: 50%;
+    @media (max-width: $screen-xs-max) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &.carousel-position-bottom-left {
+    text-align: left;
+    top: auto;
+    left: 0px;
+    right: auto;
+    bottom: 0px;
+    width: 50%;
+    @media (max-width: $screen-xs-max) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &.carousel-position-bottom-center {
+    text-align: center;
+    top: auto;
+    bottom: 0px;
+    margin: 0 auto;
+    width: 66%;
+    @media (max-width: $screen-xs-max) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &.carousel-position-bottom-right {
+    text-align: right;
+    top: auto;
+    left: auto;
+    right: 0px;
+    bottom: 0px;
+    width: 50%;
+    @media (max-width: $screen-xs-max) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &.carousel-position-middle-left {
+    text-align: left;
+    left: 0px;
+    right: auto;
+    top: 33%;
+    bottom: auto;
+    width: 33%;
+    @media (max-width: $screen-xs-max) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &.carousel-position-middle-center {
+    top: 33%;
+    margin: 0 auto;
+    bottom: auto;
+    width: 66%;
+    @media (max-width: $screen-xs-max) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &.carousel-position-middle-right {
+    text-align: right;
+    left: auto;
+    right: 0px;
+    top: 33%;
+    bottom: auto;
+    width: 33%;
+    @media (max-width: $screen-xs-max) {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+}
+
+

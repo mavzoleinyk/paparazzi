@@ -1,0 +1,39 @@
+.item-list-tabs {
+
+  margin-bottom: 20px;
+
+  ul {
+    @extend .nav;
+    li {
+      a {
+        span {
+          @extend .badge;
+        }
+      }
+    }
+  }
+
+  &#object-nav {
+    ul {
+      @extend .nav-tabs;
+    }
+  }
+
+  &#subnav {
+    ul {
+      @extend .nav-pills;
+      li {
+        &.current, &.selected {
+          @extend .active;
+        }
+        &#activity-filter-select {
+          @extend .form-group;
+          input, textarea, select {
+            @extend .form-control;
+          }
+        }
+      }
+    }
+  }
+
+}

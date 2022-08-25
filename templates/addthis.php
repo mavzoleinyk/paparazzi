@@ -1,0 +1,1 @@
+<div class="pull-right hidden-xs hidden-sm addthis_sharing_toolbox" data-url="<?php echo get_permalink(); ?>" data-title="Great proposal idea! <?php echo get_the_title(); ?>"></div>

@@ -1,0 +1,142 @@
+footer {
+
+  &.page-footer {
+    border-top: 30px solid $tabloid-red;
+    background-color: $nearly-black;
+
+    p {
+      color: $white;
+    }
+
+    h3 {
+      color: $white;
+      border-bottom: 1px solid black;
+      @include box-shadow(0px, 1px, 0px, 0px, #3d4040);
+      padding-bottom: 20px;
+      margin-bottom: 0;
+      padding-top: 50px;
+    }
+
+    a {
+      color: $light-grey;
+    }
+
+    li a {
+      color: $light-grey;
+      padding: 10px 0;
+      display: block;
+      border-bottom: 1px solid black;
+      @include box-shadow(0px, 1px, 0px, 0px, #3d4040);
+      &:hover {
+        text-decoration: none;
+        color: $dark-smokey-blue;
+      }
+    }
+
+    p {
+      padding: 10px 0;
+    }
+
+    i {
+      margin-right: 10px;
+    }
+
+    img {
+      margin: 20px 0;
+    }
+
+    form {
+      .form-field input[type=text], .form-field input[type=email] {
+        background-color: $charcoal-grey;
+        border: none;
+        @include border-radius(5px);
+        color: $white;
+      }
+
+			.frm_submit input[type=submit] {
+				@extend .btn.btn-link;
+        float: right;
+      }
+    }
+
+    .copyright {
+      p, li {
+        font-size: 0.688em;
+        color: $white;
+      }
+
+      p {
+        padding: 5px 0;
+      }
+
+      ul {
+        margin-left: 5px;
+      }
+
+      li {
+        border-left: 1px solid $white;
+        a {
+          border: none;
+          box-shadow: none;
+          padding: 2px 0px;
+          color: $white;
+          line-height: 100%;
+          &:hover {
+            color: $dark-smokey-blue;
+          }
+        }
+      }
+    }
+    @media (max-width: $screen-sm-max)
+    {
+      padding-bottom: 50px;
+    }
+  }
+
+  @media (max-width: $screen-xxs-max) {
+    text-align: center;
+  }
+
+  .frm_forms {
+
+    padding-top: 50px;
+    h3 {
+      padding-top: 0px;
+    }
+
+    &.with_frm_style {
+
+      .frm_message {
+        margin-top: 0;
+        padding: 0px;
+        background-color: transparent;
+        border: 0;
+        p {
+          padding-top: 0;
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .endorsement {
+    p, h4, h5, h6 {
+      color: #fff;
+      margin: 0px;
+      font-size: $h5-xxs-size;
+    }
+
+    figure {
+
+      line-height: 100%;
+
+      img {
+        margin: 0px;
+      }
+
+    }
+
+  }
+  
+}
+

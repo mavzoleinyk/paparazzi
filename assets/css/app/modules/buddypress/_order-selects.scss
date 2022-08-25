@@ -1,0 +1,15 @@
+.filter {
+  @extend .pull-right;
+  @extend .form-group;
+
+  label {
+    display: inline;
+    max-width: 0;
+  }
+
+  select {
+    @extend .form-control;
+    display: inline !important;
+    width: auto !important;
+  }
+}

@@ -1,0 +1,168 @@
+.btn {
+
+  @include border-radius(4px);
+  line-height: 1em;
+  padding: 15px 25px;
+  &:focus {
+      outline: none;
+  }
+
+  &.btn-transparent, &.btn-transparent:focus, &.btn-transparent:active, &.btn-transparent:hover {
+      background: transparent;
+  }
+
+  &.btn-lg {
+      padding: 20px 50px;
+      font-size: $std-size;
+  }
+
+  &.btn-sm {
+      padding: 5px 12px;
+  }
+
+  &.btn-margin-left {
+      margin-left: 10px;
+  }
+
+  &.btn-icon{
+    color: $white;
+    padding: 3px 6px 3px 5px;
+    border: 1px solid rgba(black, 0.2);
+    &:focus, &:active, &:hover {
+        color: $white;
+        border: 1px solid rgba(black, 0.2)
+    }
+  }
+
+  &.btn-primary {
+      background-color: $tabloid-red;
+      border: 2px solid $tabloid-red;
+      color: $white;
+      &:hover, &:focus, &:active {
+          background-color: darken($tabloid-red, 10%);
+          border-color: darken($tabloid-red, 10%);
+          color: $white;
+      }
+  }
+
+  &.btn-default {
+      background-color: $white;
+      border: 2px solid $light-smokey-blue;
+      color: $dark-smokey-blue;
+      &:hover, &:focus, &:active {
+          color: $darkest-smokey-blue;
+          background-color: darken($white, 10%);
+          border: 2px solid darken($white, 10%);
+      }
+  }
+
+  &.btn-info {
+      background-color: $light-smokey-blue;
+      border: 2px solid $light-smokey-blue;
+      color: $darkest-smokey-blue;
+      &:hover, &:focus, &:active {
+          background-color: darken($light-smokey-blue, 10%);
+          border: 2px solid darken($light-smokey-blue, 10%);
+          color: $nearly-black;
+      }
+  }
+
+  &.btn-link {
+      background-color: transparent;
+      border: none;
+      box-shadow: none;
+      color: $dark-smokey-blue;
+      &:hover, &:focus, &:active, &:active:focus {
+          background-color: transparent;
+          border: none;
+          outline: none;
+      }
+  }
+
+  &.btn-link-navbar {
+      color: $white;
+      &:hover {
+          color: $white;
+          text-decoration: none;
+      }
+  }
+
+  &.btn-action {
+    color: #fff;
+    font-size: 30px;
+    background-color: $darkest-red;
+
+    &.btn-sm {
+      padding: 3px 6px 3px 5px;
+      font-size: 12px;
+      top: -1px;
+      position: relative;
+    }
+
+    &.btn-caret {
+      margin-left: 7px;
+    }
+  }
+
+  &.btn-text-lg {
+    font-size: 150%;
+  }
+
+  @media (max-width: $screen-xs-max){
+    &.btn-inline-xs {
+      display: inline-block;
+      float: left;
+      width: auto !important;
+      padding: 15px 10px;
+      margin-left: 4px;
+      &.btn-sm {
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.btn-back {
+  position: absolute;
+  top: 10px;
+  left: auto;
+  right: 10px;
+  font-size: 25px;
+  color: $mid-smokey-blue;
+  z-index: $z-index-medium;
+
+  &.btn-carousel {
+    color: #fff;
+    right: 0px;
+    width: 70px;
+    max-width: 70px;
+    padding: 12px 10px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.66);
+    @media (max-width: $screen-xs-max){
+      width: 45px;
+      max-width: 45px;
+      padding: 5px;
+    }
+  }
+
+}
+
+html {
+  .woocommerce {
+    a, button {
+      &.button {
+        @extend .btn;
+        &.add_to_cart_button, &.single_add_to_cart_button {
+          @extend .btn-primary;
+
+          &[disabled=disabled]{
+            @extend .disabled;
+          }
+        }
+      }
+    }
+  }
+}
+
+

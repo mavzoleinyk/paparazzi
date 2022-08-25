@@ -1,0 +1,25 @@
+article {
+	p {
+		padding-bottom: 15px;
+		.lead {
+			padding-bottom: 10px;
+		}
+	}
+
+	// link in blog post to author - change color, size, space below
+	.user-data-link {
+		margin-bottom: 30px;
+		font-size: 13px;
+		a {
+			font-weight: 600;
+			color: $charcoal-grey;
+		}
+	}
+
+
+	// li in article - color and line-height
+	li {
+		color: $tabloid-red;
+		line-height: 180%;
+	}
+}

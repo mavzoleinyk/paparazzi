@@ -1,0 +1,52 @@
+.alert {
+
+	margin-top: 20px;
+
+	p {
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+
+  &.alert-btn-lg {
+    padding: 13px 8px 12px 8px;
+    margin-bottom: 0px;
+  }
+
+  &.alert-btn {
+    padding: 7px 8px 6px 8px;
+    margin-bottom: 0px;
+
+    .btn-sm {
+      padding: 0px 10px;
+      font-size: 11px;
+    }
+
+  }
+
+  &.alert-table {
+
+    display: table;
+    p {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  &.alert-block {
+    width: 100%;
+  }
+
+	&.alert-success {
+		background-color: $pale-green-bg;
+		.btn {
+			background-color: $pale-green-btn;
+			border-color: $pale-green-btn;
+			color: $medium-green;
+		}
+
+		p {
+			color: $medium-green;
+			line-height: 2.8em;
+		}
+	}
+}

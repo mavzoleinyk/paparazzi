@@ -1,0 +1,34 @@
+form {
+  input {
+    outline: none;
+  }
+
+  .form-field input[type=text]:focus, .form-field input[type=email]:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  &.frm-show-form {
+    .frm_hidden_container label.frm_primary_label {
+      display: none;
+    }
+  }
+
+  .form-group {
+
+    input[type=text], input[type=password], input[type=search], input[type=email], input[type=tel], textarea, select {
+      @extend .form-control;
+    }
+
+    input[type=text], input[type=password], input[type=search], input[type=email], input[type=tel] {
+      @include box-shadow-inset(0, 3px, 0, 0, $medium-gray, inset);
+    }
+
+  }
+
+  .frm_ajax_loading {
+    display: none;
+  }
+}
+
+

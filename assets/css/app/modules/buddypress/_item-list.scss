@@ -1,0 +1,13 @@
+.item-list {
+  .item-avatar {
+    &.pull-left {
+      margin-right: 7px;
+    }
+  }
+}
+
+.list-group {
+  li.list-group-item {
+    margin-left: 0px;
+  }
+}

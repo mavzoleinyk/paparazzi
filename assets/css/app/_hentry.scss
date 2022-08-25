@@ -1,0 +1,89 @@
+/**
+ * Wordpress hentry styling. This usually applies to WYSIWYG areas
+ */
+
+  .hentry {
+    ul, ol {
+      li {
+//        line-height: 140%;
+				line-height: 2em;
+      }
+    }
+
+    ul li {
+      list-style-type: disc;
+      margin-left: 19px;
+      &.list-group-item {
+        margin-left: 0;
+        color: $charcoal-grey;
+        .amount {
+          color: inherit;
+          font-size: inherit;
+        }
+      }
+    }
+
+    ol li {
+      list-style-type: decimal;
+      margin-left: 22px;
+    }
+
+    .alignleft, .wp-caption.floatleft {
+      float: left;
+      margin-right: 30px;
+    }
+
+    .alignright, .wp-caption.floatright {
+      float: right;
+      margin-left: 30px;
+    }
+
+    blockquote {
+      margin: 0px 0 20px 0;
+    }
+
+    img {
+      @media (max-width: $screen-xs-max) {
+        max-width: 50%;
+        height: auto;
+      }
+
+      @media (max-width: $screen-xxs-max) {
+        max-width: 40%;
+        height: auto;
+      }
+    }
+
+
+    .panel-gallery {
+
+      &.pull-right {
+
+        margin-left: 10px;
+        margin-bottom: 10px;
+        width: 35%;
+
+        @media (max-width: $screen-xs-max)
+        {
+          width: 40%;
+        }
+
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      @media (max-width: $screen-xs-max)
+      {
+        .panel-body {
+          padding: 3px;
+        }
+
+        figure {
+          margin: 0px;
+          width: 32%;
+        }
+      }
+    }
+  }

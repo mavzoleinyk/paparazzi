@@ -1,0 +1,53 @@
+// Proposals in sidebar
+
+aside {
+  .module-heading {
+    border-top: 10px solid $tabloid-red;
+    padding-bottom: 10px;
+    h3 {
+      padding-bottom: 0px;
+    }
+  }
+  .panel.panel-thumbnail-overlay {
+    border: none;
+  }
+}
+
+// Lists in sidebar
+
+aside {
+  ul {
+		@extend .list-group-flat;
+  }
+}
+
+// Categories and recent posts in sidebar
+
+aside {
+  ul {
+    .cat-item {
+      @extend .block-list;
+      padding: 0;
+      border: none;
+      margin: 3px 0px;
+    }
+  }
+}
+
+// Typography
+aside {
+	h3 {
+		padding-bottom: 10px;
+	}
+}
+
+// Widget
+aside {
+	&.widget {
+
+		h1,h2,h3,h4 {
+			margin-bottom: 0;
+		}
+
+	}
+}

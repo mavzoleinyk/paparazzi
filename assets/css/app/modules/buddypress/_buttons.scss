@@ -1,0 +1,12 @@
+.generic-button {
+
+  display: block;
+  padding-bottom: 5px;
+
+  a {
+    @extend .btn;
+    @extend .btn-default;
+    @extend .btn-block;
+  }
+
+}
