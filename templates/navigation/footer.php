@@ -51,7 +51,7 @@
 
         <div class="row">
 
-            <div class="col-xs-12 col-sm-8 copyright text-center">
+            <div class="col-xs-12 copyright text-center">
 
                 <p class="text-left pull-left">&copy; Copyright <?php echo date('Y'); ?> Paparazzi Proposals
 
@@ -74,21 +74,6 @@
 
             </div>
             
-            <div class="col-xs-12 col-sm-4 text-right endorsement">
-                
-                <a href="http://www.hutchhouse.com" target="_blank" title="Website User Experience, Interface Design and Development">
-                    
-                    <h6>Site made by</h6>
-                    
-                    <figure>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/web-design-and-development-by-hutchhouse.png" alt="Web design and development by Hutchhouse"/>
-                    </figure>
-
-                </a>
-                
-                
-            </div>
-
         </div>
 
     </div>

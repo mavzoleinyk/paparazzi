@@ -6,3 +6,13 @@ Author: Hutchhouse Ltd
 Author URI: http://www.hutchhouse.com
 Copyright: Hutchhouse Ltd. Copying, distribution or resale of this theme is prohibited.
 */
+
+/* Custom style 20.08.2022 */
+aside .module-heading p{
+    padding-bottom: 0;
+}
+.widget .module-heading p{
+    font-weight: 300;
+    color: #242626;
+    font-size: 32px;
+}

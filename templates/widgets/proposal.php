@@ -6,7 +6,7 @@
 
             <h4><i class="fa fa-heart"></i></h4>
 
-            <h3 class="text-uppercase">Congratulations!</h3>
+            <p class="text-uppercase">Congratulations!</p>
 
         </div>
 
@@ -15,7 +15,9 @@
 
     $args = array(
         'limit' => 1,
-        'wrapper' => false
+        'wrapper' => false,
+        'before_title'  => '<p class="widget__title">',
+        'after_title'   => '</p>\n',
     );
 
     the_proposals($args);
